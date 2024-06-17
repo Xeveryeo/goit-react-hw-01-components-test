@@ -11,9 +11,8 @@ import TransactionHistory from './TransactionHistory/TransactionHistory';
 export const App = () => {
   return (
     <>
-      <Section
-        title='Task 1. Profile'
-      >
+      <Section>
+        
         <ProfileCard
           username={user.username}
           tag={user.tag}
@@ -23,25 +22,19 @@ export const App = () => {
         />
       </Section>
 
-      <Section
-        title='Task 2. Statistics'
-      >
+      <Section>
         <Statistic
           statisticList={statistic}
         />
       </Section>
 
-      <Section
-        title='Task 3. Friend list'
-      >
+      <Section>
         <FriendList
           friends={friends}
         />
       </Section>
 
-      <Section
-        title='Task 4. Transaction history'
-      >
+      <Section>
         <TransactionHistory
           items={transactions}
         />
